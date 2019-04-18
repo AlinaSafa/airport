@@ -57,7 +57,7 @@ namespace WebApiTablo.Controllers
         }
 
         //api/board/GetFlights
-        [HttpPost]
+        [HttpGet]
         public ActionResult<List<Flight>> GetFlights()
         {
             if (db.flights.Count != 0)
